@@ -1,0 +1,23 @@
+package practice.recursion;
+
+public class ReverseOrderPrinting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		printNum(4);
+	}
+
+	public static void printNum(int num) {
+		
+		if(num == 0) {
+			System.out.println(num);
+		}
+		else {
+			System.out.println(num);
+			printNum(num);
+			num = num - 1;
+		}
+	}
+}

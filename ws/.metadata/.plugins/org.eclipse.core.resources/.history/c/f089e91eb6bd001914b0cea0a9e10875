@@ -1,0 +1,70 @@
+package practice.loops;
+
+public class LoopsPractice {
+
+	public static void main(String[] args) {
+
+//		int count = 0; 
+//		
+//		while(count <= 100) {
+//			System.out.println("Narendra" + count);
+//			if(count == 30) {
+//				break;
+//			}
+//			count++;
+//		}
+
+		String str = "we have a large inventory of things in our warehouse falling"
+				+ "the category:apperal and the slightly "
+				+ "more in demand category:makeup along with the category:furniture and ...";
+
+		printCategories(str);
+		
+		
+		for(int i = str.length() -1; i > 0; i++) {
+			char ch = str.charAt(i);
+			System.out.println(ch);
+			
+		}
+			
+		
+	}
+
+	public static void printCategories(String string) {
+//		int i = 0;
+//		while (true) {
+//
+//			int found = string.indexOf("category:", i);
+//
+//			System.out.println("Index of category " + found);
+//
+//			if (found == -1) {
+//				break;
+//			}
+//			int start = found + 9;
+//			int end = string.indexOf(" ", start);
+//			System.out.println(string.substring(start, end));
+//			i = end + 1;
+//
+//		}
+
+		for (int j = 0; j < string.length(); ) {
+
+			int found = string.indexOf("category:", j);
+
+			System.out.println("Index of category " + found);
+
+			if (found == -1) {
+				break;
+			}
+			int start = found + 9;
+			int end = string.indexOf(" ", start);
+			System.out.println(string.substring(start, end));
+			j = end + 1;
+
+		}
+
+	
+	}
+
+}

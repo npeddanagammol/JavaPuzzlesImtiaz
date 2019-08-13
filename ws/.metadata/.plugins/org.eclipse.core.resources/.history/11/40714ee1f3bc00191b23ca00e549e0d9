@@ -1,0 +1,44 @@
+package practice_programs.strings;
+
+public class Dog {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Boolean barking = false;
+		int time = 8;
+
+//		for(int time = 0; time<=23;time++) {
+//			if(time <= 7 || time >= 23) {
+//				
+//				System.out.println(barking);
+//			}else {
+//				System.out.println("Dog is doing other activities");
+//			}
+//		}
+
+//		if (time < 7 || time > 23) {
+//			System.out.println("Dog is barking ");
+//		} else {
+//			System.out.println(barking);
+//		}
+
+		System.out.println(dogBarking(true,6));
+		System.out.println(dogBarking(true,7));
+		System.out.println(dogBarking(false,12));
+		System.out.println(dogBarking(true,23));
+//		dogTrouble(true,6); -> true
+//		dogTrouble(false,7);
+
+	}
+
+	public static boolean dogBarking(boolean barking, int hour) {
+		if (barking) {
+			if (hour < 7 || hour > 23) {
+				return true;
+			}else return false;
+		} else {
+			return false;
+		}
+	}
+
+}

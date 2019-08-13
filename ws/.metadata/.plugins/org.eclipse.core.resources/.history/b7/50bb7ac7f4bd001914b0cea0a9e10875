@@ -1,0 +1,25 @@
+package practical.signs;
+
+public class Signs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		operators(10);
+
+	}
+	
+	public static void operators(int num1) {
+		
+		int n = 10;
+		
+		if(num1 >= 10) {
+			System.out.println("======");
+		}
+		else if(num1 <= 10) {
+			System.out.println("**********");
+		}
+		System.out.println("!!!!!!!");
+	}
+
+}

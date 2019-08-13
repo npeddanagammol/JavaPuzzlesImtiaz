@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/apple/Downloads/Coding Puzzles by imtiaz/ws/.metadata/.plugins/org.eclipse.jdt.core
+4092065000.index
+2111693647.index
+3839144693.index

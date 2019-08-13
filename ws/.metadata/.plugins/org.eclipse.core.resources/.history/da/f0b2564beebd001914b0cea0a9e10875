@@ -1,0 +1,73 @@
+package assignment_02;
+
+import ignore.TestingUtils;
+
+public class App {
+	
+
+	
+	/**
+	 * You are driving a little too fast, and a police officer stops you. 
+	 * Write code to compute the fine you would have to pay. 
+	 * If your speed is 60 or less, the result is 0 since there is no fine. 
+	 * If speed is between 61 and 80 inclusive, the fine is 100 dollars. 
+	 * If speed is 81 or more, the result is 200. 
+	 * Unless it is a holiday -- on that day, your speed can be 5 higher in all cases. <br>
+	 * <br> 
+	 *
+	 * <b>EXPECTATIONS:</b><br>
+		speedingFine(60, false)  <b>---></b> 0 <br>
+		speedingFine (65, false)   <b>---></b> 100 <br>
+		speedingFine (65, true) <b>---></b> 0 <br>
+	 */
+		public static int speedingFine(int speed, boolean isHoliday) {
+			
+			if(speed <= 60 && isHoliday == false ) {
+			return 0;
+
+		} else if(speed <= 60 && isHoliday == true ) {
+			return 0;
+	
+		}
+		else if(speed > 60 && speed < 81 && isHoliday == false ) {
+			return 100;
+	
+		}else if(speed > 60 && speed < 86 && isHoliday == true ) {
+			return 0;
+	
+		}
+		
+		else if(speed > 81 && isHoliday == false ) {
+			return 200;
+		}else if(speed > 81 && isHoliday == true ) {
+			return 100;
+		}
+			
+			return 0;
+			
+		
+		}
+	
+	
+//	{60,65,65,80,85,85,70,75,75,40,40,90};
+//	{ false, false, true, false, false, true, false, false, true, false, true, false };
+	
+	
+	
+	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
+		public static void main(String args[]){
+			TestingUtils.runTests();
+			speedingFine(60,false);
+			speedingFine(60,true);
+			speedingFine(65,true);
+			speedingFine(65,false);
+			speedingFine(95,true);
+			speedingFine(95,false);
+			speedingFine(85,false);
+			
+			
+			
+		}
+			
+
+}

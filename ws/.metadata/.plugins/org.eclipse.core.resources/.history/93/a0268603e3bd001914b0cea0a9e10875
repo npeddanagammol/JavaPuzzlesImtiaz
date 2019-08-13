@@ -1,0 +1,12 @@
+package practice.strings;
+
+public class NumbersDivisible {
+	
+	//Conversion
+	
+	static int i = 10;
+	static String str = String.valueOf(i);
+	public static void main(String[] args) {
+		System.out.println(str);
+	}
+}

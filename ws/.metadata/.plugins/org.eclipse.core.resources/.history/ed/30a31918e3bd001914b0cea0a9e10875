@@ -1,0 +1,15 @@
+package practice.strings;
+
+public class NumbersDivisible {
+	
+	//Conversion
+	
+	static int i = 10;
+	static boolean bool = true;
+	static String str = String.valueOf(i);
+	static String strBoolean = String.valueOf(bool);
+	public static void main(String[] args) {
+		System.out.println(str);
+		System.out.println(strBoolean);
+	}
+}

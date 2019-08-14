@@ -35,24 +35,37 @@ public class App {
 		 */
 
 		// Method 2 :- good developers way
+		/**
+		 * int minSpeed = 60; int maxSpeed = 80; int fine = 0;
+		 * 
+		 * if (isHoliday) { minSpeed += 5; maxSpeed += 5; }
+		 * 
+		 * if (speed >= maxSpeed) fine = 200;
+		 * 
+		 * if (speed <= minSpeed) fine = 0;
+		 * 
+		 * if (speed > minSpeed && speed <= maxSpeed) fine = 100;
+		 * 
+		 * 
+		 * return fine;
+		 */
 
-		int minSpeed = 60;
-		int maxSpeed = 80;
-		int fine = 0;
+		// Method 3
 
 		if (isHoliday) {
-			minSpeed += 5;
-			maxSpeed += 5;
+			speed -= 5;
 		}
 
-		if (speed >= maxSpeed) fine = 200;
-			
-		if (speed <= minSpeed) fine = 0;
-			
-		if (speed > minSpeed && speed <= maxSpeed) fine = 100;
-			
-
-		return fine;
+		if (speed <= 60) {
+			return 0;
+		}
+		if (speed > 60 && speed <= 80) {
+			return 100;
+		}
+		if (speed > 80) {
+			return 200;
+		}
+		return 100;
 
 	}
 

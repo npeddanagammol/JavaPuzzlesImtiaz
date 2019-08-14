@@ -17,8 +17,20 @@ public class App {
 	 */
 		public static boolean twoSumOne(int a, int b, int c) {
 			
+			//Method 1
+			/**
+			if(a+b == c || b+c == a || a+c == b) {
+				return true;
+			}
+			
 			return false;
-
+			 */
+			
+			// Method 2
+			
+			return (a+b == c || b+c == a || a+c == b);
+			
+			
 		}
 		
 	

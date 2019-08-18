@@ -22,7 +22,12 @@ public class App {
 	
 	public static String insideBrackets(String str) {
 	
-		// complete the body of this method
+		String tempForward = str.substring(1);
+		if(str.charAt(0)!='[') return insideBrackets(tempForward);
+		
+		String tempBackward = str.substring(0,str.length()-1);
+		if(str.charAt(str.length()-1) != ']') return insideBrackets(tempBackward);
+		
 		return str;
 	}
 

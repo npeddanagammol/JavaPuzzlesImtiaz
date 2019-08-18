@@ -4,37 +4,38 @@ import ignore.TestingUtils;
 
 public class App {
 
-
 	/**
-
-	Given a string, return a string where for every char in the original, append another. 
-	<br>
-	<br>
-
+	 * 
+	 * Given a string, return a string where for every char in the original, append
+	 * another. <br>
+	 * <br>
+	 * 
 	 * <b>EXPECTATIONS:</b><br>
-		repeatChar("The")  <b>---></b>"TThhee"<br>
-		repeatChar("AAbb")    <b>---></b> "AAAAbbbb" <br>
-		repeatChar("Hi-There") <b>---></b> "HHii--TThheerree" <br>
+	 * repeatChar("The") <b>---></b>"TThhee"<br>
+	 * repeatChar("AAbb") <b>---></b> "AAAAbbbb" <br>
+	 * repeatChar("Hi-There") <b>---></b> "HHii--TThheerree" <br>
 	 */
-	
+
 	public static String repeatChar(String str) {
-		return str;
-		
+
+		String result = "";
+//		int i =0;
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+//			result = result+ch+ch; // When you concatenate character with the string then it will automatically typecasted.  
+			// OR
+			result += "" + ch + ch;
+
+		}
+
+		return result;
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
-	public static void main(String args[]){
+	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW
+	// --------------------//
+	public static void main(String args[]) {
 		TestingUtils.runTests();
-		
+
 	}
 }
